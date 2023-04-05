@@ -1,95 +1,114 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+@font-face {
+  font-family: "Dovemayo_gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-body{
-    background-color: #f8f8f8;
+* {
+  margin: 0;
+  font-family: "Dovemayo_gothic";
+  box-sizing: border-box;
 }
 
-header{
-    height: 40px;
-    background-color: #333;
+body {
+  background-color: #f8f8f8;
 }
 
-main{
-    height: 600px;
-    width: 750px;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    box-shadow: 10px 10px 20px gray;
+header {
+  height: 40px;
+  background-color: black;
 }
 
-#top{
-    height: 35px;
-    background-color: #f0cdea;
-    margin-bottom: 25px;
-    border-radius: 0 0 10px 10px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    line-height: 35px;
+main {
+  height: 600px;
+  width: 750px;
+  margin: 0 auto;
+  background-color: beige;
 }
 
-#container{
-    height: 410px;
-    padding: 10px;
-    /* flex(wrap)으로 section 배치*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+footer {
+  height: 200px;
+  background-color: gray;
 }
 
-aside{
-    height: 110px;
-    background-color: #f8f8f8;
-    margin-bottom: 60px;
-    margin: 0 15px 60px 15px;
+#top {
+  height: 35px;
+  background-color: #f0cdea;
+  margin-bottom: 25px;
+  border-radius: 0 0 10px 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+}
+
+#container {
+  height: 410px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+aside {
+  height: 110px;
+  background-color: #f8f8f8;
+  margin-bottom: 60px;
+  margin: 0 15px 60px 15px;
 }
 
 section {
-    height: 45%;
-    width: 30%;
-    border-radius: 7px;
-    text-align: center;
-    display: block;
-    background-color: white;
-    justify-content: center;
+  height: 45%;
+  width: 30%;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#team{
-    width: 470px;
-    height: 100%;
-    background-color: #31999c;
-    color: white;
-    border-radius: 5px;
-    font-size: 15px;
-    float: left;
-    padding: 20px;
-    text-align: center;
+p {
+  position: relative;
 }
 
-#hi{
-    width: 230px;
-    height: 100%;
-    background-color: pink;
-    color: black;
-    border-radius: 5px;
-    font-size: 15px;
-    float: right;
-    padding: 30px;
-    text-align: center;
+#team {
+  width: 470px;
+  height: 100%;
+  background-color: #31999c;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer{
-    height: 200px;
-    background-color: white;
+#hi {
+  width: 230px;
+  height: 100%;
+  background-color: pink;
+  color: black;
+  border-radius: 5px;
+  font-size: 15px;
+  float: right;
 }
 
+#song {
+  background-image: url("https://images.genius.com/092f532c528a217c599fcd5421f157b6.1000x1000x1.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+}
 
-
-
-
-
-
+.bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
