@@ -98,7 +98,7 @@ section p {
 }
 
 #mbti {
-    background-image: url("./images/mbti.png");
+    background-image: url("./mbti.png");
     background-size: cover;
     height: 45%;
     width: 30%;
@@ -112,7 +112,7 @@ section p {
 }
 
 #movie {
-    background-image: url("./images/movie.png");
+    background-image: url("./movie.png");
     background-size: cover;
     height: 45%;
     width: 30%;
@@ -126,7 +126,7 @@ section p {
 }
 
 #dog {
-    background-image: url("./images/dog.jpeg");
+    background-image: url("./dog.jpeg");
     background-size: cover;
     height: 45%;
     width: 30%;
