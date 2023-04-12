@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'KimjungchulGothic-Bold';
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.662);
+    
+}
+
+header{
+    height: 40px;
+    background-color:rgb(230, 245, 220);
+}
+
+main{
+    height: 600px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: rgb(159, 182, 159);
+}
+
+footer{
+    height: 200px;
+    background-color: rgb(230, 245, 220);
+    text-align: center;
+    color:rgba(63, 66, 66, 0.662);
+    padding: 20px;
+}
+
+#top{
+    height: 35px;
+    background-color:honeydew;
+    margin-bottom: 25px;
+    border-radius: 0 0 10px 10px;
+    color: rgb(28, 58, 41);
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#container{
+    height: 410px;
+    padding: 10px;
+   /* background-color:beige;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+
+aside{
+    height: 110px;
+    background-color:rgb(159, 182, 159);
+    margin-bottom: 60px;
+    margin: 0 23px 60px 23px;
+    border-radius: 5px;
+    
+}
+
+section{
+    height: 45%;
+    width: 30%;
+    background-color: rgb(234, 246, 235);
+    border-radius: 7px;
+}
+
+#team{
+    height: 110px;
+    width: 58%;
+    background-color: rgb(203, 233, 191);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    float: left;
+}
+
+#hi{
+    height: 110px;
+    width: 40%;
+    background-color: rgb(206, 222, 197);
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    float: right;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section p{
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+#team p{
+    padding: 5px;
+    text-align: center;
+    
+}
+
+#movie {
+    background-image: url(./image/eee.jpg);
+    background-size: cover;
+    height: 45%;
+    width: 30%;
+    position: relative;
+    color: white;
+}
+#movie:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+#mbti {
+    background-image: url(./image/inpt1.jpg);
+    background-size: cover;
+    height: 45%;
+    width: 30%;
+    
+    color: white;
+    position: relative;
+}
+#mbti:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+#with {
+    background-image: url(./image/ttt.jpg);
+    background-size: cover;
+    height: 45%;
+    width: 30%;
+    position: relative;
+    color: white
+    
+}
+#with:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+#profile:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+#music:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+    
+    
+}
+#food:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+#hi p{
+    padding: 30px;
+    text-align: center;
+}
+
+.bg{
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#alert{
+    display: none;
+    text-align: center;
+    padding-top: 300px;
+}
+
+@media(max-width: 800px){
+    #main-container{
+        display: none;
+    }
+    #alert{
+        display:block;
+    }
+}
