@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* body */
+body {
+    background-color: white;
+}
+
+/* body 맨 위 */
+header {
+    height: 60px;
+    background-color: rgb(240, 142, 142);
+    border: 3px solid black;
+
+    text-align: center;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/************************************************************/
+/* body 가운데 */
+main {
+    height: 600px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* main 맨 위 */
+#top {
+    height: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #f7b264;
+    border-radius: 0 0 10px 10px;
+    border: 3px solid black;
+
+    text-align: center;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/*----------------------------------*/
+/* main 가운데 */
+#container {
+    height: 410px;
+    padding: 10px;
+    background-color: rgb(242, 242, 57);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+/* container 내부 */
+section {
+    height: 45%;
+    width: 230px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section p {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#title {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    position: relative;
+}
+
+#profile {
+    background-image: url("./images/profile.png");
+    background-size: cover;
+    position: relative;
+}
+
+#mbti {
+    background-image: url("./images/mbti.png");
+    background-size: cover;
+    position: relative;
+}
+
+#food {
+    background-image: url("./images/food.png");
+    background-size: cover;
+    position: relative;
+}
+
+#movie {
+    background-image: url("./images/movie.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#music {
+    background-image: url("./images/music.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#cat {
+    background-image: url("./images/cat.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+/*----------------------------------*/
+/* main 맨 아래 */
+aside {
+    height: 120px;
+    background-color: white;
+    margin-bottom: 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* aisde 왼쪽 */
+#team {
+    height: 100%;
+    width: 492px;
+    background-color: #9eedb6;
+    border: 3px solid black;
+    border-radius: 10px 10px 0 0;
+
+    float: left;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* aisde 오른쪽 */
+#hi {
+    height: 100%;
+    width: 248px;
+    background-color: rgb(177, 234, 249);
+    border: 3px solid black;
+    border-radius: 10px 10px 0 0;
+
+    float: right;
+    padding: 40px 0 0 0;
+    text-align: center;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/************************************************************/
+/* body 맨 아래 */
+footer {
+    height: 60px;
+    background-color: rgb(227, 198, 235);
+    border: 3px solid black;
+
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#alert {
+    display: none;
+    text-align: center;
+    padding-top: 300px;
+}
+
+@media (max-width:800px) {
+    #main-container {
+        display: none;
+    }
+
+    #alert {
+        display: block;
+    }
+}
