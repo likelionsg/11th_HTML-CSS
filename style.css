@@ -1,0 +1,153 @@
+ @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+ 
+*{ 
+    font-family: 'Gamja Flower', cursive;
+    box-sizing:  border-box;
+    margin: 0;
+}
+header{
+    height: 40px;
+    background-color:  #333;
+}
+main{
+    height: 600px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+footer{
+    height: 200px;
+    background-color:  white;
+    text-align: center;
+    color: gray;
+    padding: 50px;
+    font-size: 5px;
+}
+#top{
+    height: 60px;
+    background-color: #f0cdea;
+    margin-bottom: 25px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+    padding: 13px;
+}
+#container{
+    height: 410px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+aside{
+    height: 110px;
+    background-color: #f8f8f8;
+    margin-bottom: 60px;
+    margin : 0 15px 60px 15px;
+    display: flex;
+    justify-content: space-between; 
+}
+body{
+    background-color: #f8f8f8;
+}
+section{
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 7px;
+}
+#team{
+    width: 470px;
+    height: 100%;
+    background-color: #31999c;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+#hi{
+    width: 230px;
+    height: 100%;
+    background-color: bisque;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+section p {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#mbti{
+    background-image:  url("./images/mbti.jpg");
+    background-size: cover;
+    height: 45%;
+    width: 30%;
+    position: relative;
+    color: white;
+}
+
+#mbti:hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+}
+
+#movie{
+    background-image:  url("./images/myyoutube.jpg");
+    background-size: cover;
+    height: 45%;
+    width: 30%;
+    position: relative;
+    color: white;
+}
+
+#movie:hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+}
+
+#youtube{
+    background-image:  url("./images/youtube.webp");
+    background-size: cover;
+    height: 45%;
+    width: 30%;
+    position: relative;
+    color: white;
+}
+
+#youtube:hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+}
+
+.bg{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+@media(max-width: 800px) {
+    #main-container {
+        display: none;
+    }
+    #alert{
+        display: block;
+    }
+}
+    
+.title {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
