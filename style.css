@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Dovemayo_gothic';
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+header{
+    height: 40px;
+    background-color: black;
+}
+
+main{
+    height: 600px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+footer{
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    color: gray;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#top{
+    height: 35px;
+    background-color: #f0cdea;
+    margin-bottom: 25px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#container{
+    height: 410px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+ 
+}
+
+aside{
+    height: 110px;
+
+    margin-bottom: 60px;
+    margin: 0 15px 60px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    height: 45%;
+    width: 30%;
+    background-color: rgb(4, 250, 135);
+    border-radius: 7px;
+    position: relative;
+    color: white;
+}
+
+section:hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+}
+
+section p{
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+
+#MBTI{
+    background-image: url("./images/ENFP.jpg");
+    background-size: cover;
+    
+}
+
+#movie{
+    background-image: url("./images/movie.jpg");
+    background-size: cover;
+    
+}
+
+#song{
+    background-image: url("./images/song.jpg");
+    background-size: cover;
+    
+}
+
+#alcohol{
+    background-image: url("./images/alcohol.jpg");
+    background-size: cover;
+ 
+}
+
+#team{
+    width:470px;
+    height:100%;
+    background-color: #31999c;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#hi{
+    width: 230px;
+    height: 100%;
+    background-color: pink;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.bg{
+    background-color: rgb(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#alert{
+    display: none;
+    text-align: center;
+    padding-top: 300px;
+}
+
+@media(max-width:800px)
+{
+    #main-container{
+        display: none;
+    }
+
+    #alert{
+        display:block;
+    }
+}
