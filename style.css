@@ -1,78 +1,64 @@
-@font-face {
-    font-family: 'SeoulNamsanM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-*{
-    box-sizing: border-box;
+ @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+ 
+*{ 
+    font-family: 'Gamja Flower', cursive;
+    box-sizing:  border-box;
     margin: 0;
-    font-family: 'SeoulNamsanM';
-    line-height: 20px;
 }
-
-body{
-    background-color: #f8f8f8;
-}
-
 header{
     height: 40px;
-    background-color: #333;
+    background-color:  #333;
 }
-
 main{
     height: 600px;
     width: 750px;
     margin: 0 auto;
     background-color: #f8f8f8;
-    box-shadow: 10px 10px 20px gray;
 }
-
+footer{
+    height: 200px;
+    background-color:  white;
+    text-align: center;
+    color: gray;
+    padding: 50px;
+    font-size: 5px;
+}
 #top{
-    height: 35px;
+    height: 60px;
     background-color: #f0cdea;
     margin-bottom: 25px;
     border-radius: 0 0 10px 10px;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     line-height: 35px;
+    padding: 13px;
 }
-
 #container{
     height: 410px;
     padding: 10px;
-    /* flex(wrap)으로 section 배치*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
 }
-
 aside{
     height: 110px;
     background-color: #f8f8f8;
     margin-bottom: 60px;
-    margin: 0 15px 60px 15px;
+    margin : 0 15px 60px 15px;
+    display: flex;
+    justify-content: space-between; 
 }
-
-section {
+body{
+    background-color: #f8f8f8;
+}
+section{
     height: 45%;
     width: 30%;
-    border-radius: 7px;
-    text-align: center;
-    display: block;
     background-color: white;
-    justify-content: center;
+    border-radius: 7px;
 }
-
-section p {
-    padding: 30px;
-    text-align: center;
-    position: relative;
-}
-
 #team{
     width: 470px;
     height: 100%;
@@ -80,25 +66,28 @@ section p {
     color: white;
     border-radius: 5px;
     font-size: 15px;
-    float: left;
-    padding: 20px;
     text-align: center;
+    padding: 5px;
 }
-
 #hi{
     width: 230px;
     height: 100%;
-    background-color: pink;
+    background-color: bisque;
     color: black;
     border-radius: 5px;
-    font-size: 15px;
-    float: right;
-    padding: 30px;
+    font-size: 20px;
     text-align: center;
+    padding: 40px;
 }
 
-#mbti {
-    background-image: url("./images/mbti.png");
+section p {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#mbti{
+    background-image:  url("./images/mbti.jpg");
     background-size: cover;
     height: 45%;
     width: 30%;
@@ -111,8 +100,8 @@ section p {
     transition: all 0.2s linear;
 }
 
-#movie {
-    background-image: url("./images/movie.png");
+#movie{
+    background-image:  url("./images/myyoutube.jpg");
     background-size: cover;
     height: 45%;
     width: 30%;
@@ -125,8 +114,8 @@ section p {
     transition: all 0.2s linear;
 }
 
-#dog {
-    background-image: url("./images/dog.jpeg");
+#youtube{
+    background-image:  url("./images/youtube.webp");
     background-size: cover;
     height: 45%;
     width: 30%;
@@ -134,41 +123,31 @@ section p {
     color: white;
 }
 
-#dog:hover{
+#youtube:hover{
     transform: scale(1.4);
     transition: all 0.2s linear;
 }
 
-.bg {
-    background-color: rgba(0,0,0,0.5);
+.bg{
+    background-color: rgba(0,0,0,0.6);
     width: 100%;
     height: 100%;
     border-radius: 5px;
     position: absolute;
 }
 
-#alert {
-    display: none;
-    text-align: center;
-    padding-top: 300px;
-}
-
-footer{
-    height: 200px;
-    background-color: white;
-    text-align: center;
-    color: rgb(170, 170, 170);
-    padding: 50px;
-}
-
 @media(max-width: 800px) {
     #main-container {
         display: none;
     }
-    
-    #alert {
+    #alert{
         display: block;
     }
 }
-
-
+    
+.title {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}
