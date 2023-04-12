@@ -1,0 +1,192 @@
+*{
+  box-sizing : border-box;
+  margin : 0;
+}
+
+body{
+  background-color: #f8f8f8;
+}
+
+header{
+  height : 40px;
+  background-color : black;
+}
+
+main{
+  height : 600px;
+  width : 750px;
+  margin : 0 auto;
+  background-color: rgb(247, 230, 233);
+}
+
+footer{
+  color : black;
+  font-size : 25px;
+  font-family : 'establishRoomNo703OTF';
+  height : 200px;
+  background-color: rgba(247, 131, 247, 0.441);
+  text-align : center;
+  padding : 30px;
+}
+
+#top{
+  padding : 3px;
+  height : 35px;
+  background-color: rgb(238, 76, 76);
+  margin-bottom : 25px;
+  border-radius : 0 0 10px 10px;
+  color : white;
+  font-family : 'establishRoomNo703OTF';
+  font-size : 20px;
+  text-align : center;
+  line-height : 35px;
+}
+
+#container{
+  height : 410px;
+  padding : 10px;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+aside{
+  font-family: 'establishRoomNo703OTF';
+  height : 80px;
+  background-color : rgb(247, 230, 233);
+  margin-bottom : 60px;
+  margin : 0 15px 60px 15px;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-around;
+}
+
+section{
+  height : 45%;
+  width : 30%;
+  background-color: white;
+  border-radius : 7px;
+}
+
+section p{
+  text-align : center;
+  font-family: 'establishRoomNo703OTF';
+  position: relative;
+  padding : 20px;
+}
+
+#introduce{
+  /* padding : 30px; */
+  font-size : 20px;
+  
+}
+.sel{
+  border-radius : 7px;
+  background-color : rgba(0, 0, 0, 0.3);
+  position : absolute;
+  width : 100%;
+  height : 100%;
+}
+
+#selfie{
+  font-size : 23px;
+  color : white;
+  background-image : url("./image/selfie.jpg");
+  background-size : cover;
+  background-repeat : no-repeat;
+  background-position : center;
+  position : relative;
+}
+
+
+
+#selfie:hover{
+  transform : scale(1.4);
+  transition : all 0.2s linear;
+}
+
+#course{
+  /* padding : 20px; */
+  font-size : 16px;
+}
+
+#football{
+  color : white;
+  font-size : 23px;
+  /* padding : 20px; */
+  background-image : url("./image/football.jpg");
+  background-size : cover;
+  background-repeat : no-repeat;
+  background-position : center;
+}
+
+#football:hover{
+  transform : scale(1.4);
+  transition : all 0.2s linear;
+}
+
+#sing{
+  /* padding : 22px; */
+  font-size : 17px;
+}
+
+#movie{
+  /* padding : 20px; */
+  font-size : 23px;
+  color : white;
+  background-image : url("./image/potter.jpg");
+  background-size : cover;
+  background-repeat : no-repeat;
+  background-position : center;
+}
+
+#movie:hover{
+  transform : scale(1.4);
+  transition : all 0.2s linear;
+}
+
+#team{
+  padding : 7px;
+  width : 465px;
+  height : 100%;
+  background-color: #f2776b91;
+  color : black;
+  text-align : center;
+  border-radius : 5px;
+  font-size : 14px;
+}
+
+#hi{
+  padding : 10px;
+  width : 220px;
+  height : 100%;
+  background-color: rgba(244, 177, 32, 0.642);
+  color : black;
+  border-radius : 5px;
+  font-size : 15px;
+  text-align : center;
+}
+
+@font-face {
+  font-family: 'establishRoomNo703OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#alert{
+  display : none;
+  text-align : center;
+  padding-top : 300px;
+}
+
+@media(max-width : 800px){
+  #main-container{
+    display : none;
+  }
+
+  #alert{
+    display : block;
+  }
+}
