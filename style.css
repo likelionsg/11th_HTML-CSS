@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gugi', cursive;
+    list-style-type: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#alert{
+    display: none;
+    text-align: center; 
+    padding-top: 300px;
+}
+
+body {
+    background-color: #ddd;
+}
+
+/* --------- Header --------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #333;
+    color:whitesmoke;
+}
+
+header > .logo {
+    margin-left: 100px;
+    line-height: 2;
+}
+
+header > .quicklink {
+    margin-right: 100px;
+}
+.quicklink > ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    line-height: 4;
+}
+.quicklink > ul > li:hover {
+    color: #aaa;
+}
+
+/* --------- Main --------- */
+main {
+    height: 600px;
+    width: 960px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: #efefef;
+    box-shadow: 10px 5px 5px #aaa;
+}
+
+footer {
+    height: 70px;
+    background-color: white;
+}
+
+#top {
+    height: 35px;
+    margin-bottom: 25px;
+    background-color: #f0cdea;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 10px;    
+
+    height: 410px;
+    padding: 10px;
+}
+
+section {
+    height: 45%;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 7px;
+    background-color: #fff;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    font-size: 1.3em;
+    text-align: center;
+}
+section p {
+    padding: 30px;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+section:nth-child(even):hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+    z-index: 999;
+}
+#section1 {
+    font-size: 1em;
+}
+#section2 {
+    background-image: url('./images/mbti.jfif');
+    background-position: bottom;
+    font-size: 2em;
+    color: white;
+}
+
+#section4 {
+    color: white;
+    background-image: url('./images/dijean.jfif');
+}
+
+#section6 {
+    color: white;
+    background-image: url('./images/cat.jfif');
+}
+
+
+aside {
+    display: flex;
+    justify-content: space-around;
+    height: 110px;
+    margin: 0 15px 60px;
+
+    text-align: center;
+}
+
+#team {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+
+#hi {
+    width: 35%;
+    height: 100%;
+    padding: 40px;
+    background-color: paleturquoise;
+    border-radius: 10px;
+}
+
+footer {
+    padding-top: 15px;
+    text-align: center;
+}
+
+@media(max-width: 800px){
+    #main-container {
+        display: none;
+    }
+
+    #alert {
+        display: block;
+    }
+}
