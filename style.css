@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family : 'KimjungchulGothic-Bold';
+    margin: 0;
+}
+body{
+    background-color: #f8f8f8;
+}
+
+header{
+    height: 40px;
+    background-color: #333;
+}
+
+main{
+    height: 600px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: rgb(231, 228, 228);
+}
+footer{
+    height: 200px;
+    background-color: white;
+}
+
+#top{
+    height: 35px;
+    background-color: #f0cdea;
+    margin-bottom: 25px;
+    border-radius: 0 0 10px 10px;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+#container{
+    height: 410px;
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+aside{
+    height: 110px;
+    background-color: white;
+    margin-bottom: 60px;
+    margin: 0 15px 60px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    height: 45%;
+    width: 30%;
+    background-color: white;
+    border-radius: 7px;
+}
+#profile{
+    padding : 30px;
+    text-align: center;
+}
+#food{
+    padding: 30px;
+    text-align: center;
+}
+#mbti{
+    padding: 30px;
+    text-align: center;
+}
+
+.bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position:absolute;
+}
+section p {
+    padding: 5px;
+    position: relative;
+}
+#movie:hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+}
+#movie{
+    background-image: url("./images/movie.jpeg");
+    background-size: cover;
+    text-align: center;
+    position:relative;
+    color:white;
+}
+#music{
+    padding: 30px;  
+    text-align: center;
+}
+#dog:hover{
+    transform: scale(1.4);
+    transition: all 0.2s linear;
+}
+#dog{
+    background-image: url("./images/dog.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    text-align: center;
+}
+#team{
+    width: 460px;
+    height: 100%;
+    background-color: #31999c;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    float:left;
+    text-align: center;
+}
+#hi{
+    width: 230px;
+    height: 100%;
+    padding : 30px;
+    background-color: pink;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    float:right;
+    text-align: center;
+}
+footer{
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    color: rgb(170,170,170);
+    padding : 10px;
+}
+#alert{
+    display: none;
+    text-align: center;
+    padding: 300px;
+}
+@media(max-width:800px){
+    #main-container{
+        display: none;
+    }
+    #alert{
+        display: block;
+    }
+}
